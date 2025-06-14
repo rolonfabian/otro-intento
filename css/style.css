@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kreon', serif;
+    background-color: #cad2c5;
+    color: #2f3e46;
+}
+
+h1 {
+    color: #cad2c5;
+    background-color: #2f3e46;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #2f3e46;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+header input[type="search"] {
+    margin-top: 10px;
+    padding: 8px;
+    width: 90%;
+    max-width: 400px;
+    border: none;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #354f52;
+}
+
+.producto {
+    background-color: #52796f;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fefefe;
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.producto h2 {
+    color: #cad2c5;
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    font-size: 0.95rem;
+}
+
+footer {
+    background-color: #52796f;
+    color: #cad2c5;
+    background-attachment: fixed;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    .grid {
+        padding: 10px;
+    }
+
+    .producto img {
+        height: 120px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 24px;
+    }
+
+}
